@@ -2,13 +2,13 @@
 
 A mod system for [OpenVoxel](https://open-voxel.net) that never modifies the game: the client
 loader is a Java agent injected into the **official launcher**, and the server side is a plugin
-for the **official dedicated server**. Current release: **ModLoader 1.0.0 for game 0.8.0**
+for the **official dedicated server**. Current release: **ModLoader 1.0.0 for game 0.0.8**
 (client version `0.0.8-Debug`).
 
 | Repository | What | Release file |
 |------------|------|--------------|
-| [ModLoader-Client](https://github.com/OpenVoxel-ModLoader/ModLoader-Client) | Client loader: Minecraft-style UI, Creative/Survival, crafting, chests, skins, chat, controls, resource packs, languages, mod API. | `ModLoader-v1.0.0-vgame-0.8.0-client.jar` |
-| [ModLoader-Server](https://github.com/OpenVoxel-ModLoader/ModLoader-Server) | Server core plugin + start scripts with an interactive console. | `ModLoader-v1.0.0-vgame-0.8.0-server.jar` |
+| [ModLoader-Client](https://github.com/OpenVoxel-ModLoader/ModLoader-Client) | Client loader: Minecraft-style UI, Creative/Survival, crafting, chests, skins, chat, controls, resource packs, languages, mod API. | `ModLoader-v1.0.0-vgame-0.0.8-client.jar` |
+| [ModLoader-Server](https://github.com/OpenVoxel-ModLoader/ModLoader-Server) | Server core plugin + start scripts with an interactive console. | `ModLoader-v1.0.0-vgame-0.0.8-server.jar` |
 | [ModLoader-ModsExamples](https://github.com/OpenVoxel-ModLoader/ModLoader-ModsExamples) | Example client mods (hello, HUD clock, block counter). | `hello-mod.jar`, `hud-clock.jar`, `block-counter.jar` |
 | [ModLoader-Server-Example](https://github.com/OpenVoxel-ModLoader/ModLoader-Server-Example) | Example server plugin (Hunger Games mini-game). | `HungerGames.jar` |
 | [openvoxel-modloader.github.io](https://github.com/OpenVoxel-ModLoader/openvoxel-modloader.github.io) | Docs & tutorials site (EN/ES): https://openvoxel-modloader.github.io/ | — |

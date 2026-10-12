@@ -5,8 +5,8 @@
 - Project split into `repos/` for the GitHub org OpenVoxel-ModLoader: `modloader-client`
   (agent, examples, instance, scripts), `modloader-server` (core plugin + HungerGames
   example + start scripts), `docs` (static Pages site), `voxelnames` (API + site).
-- Brand "Voxelite" → "OpenVoxel ModLoader"; jars `ModLoader-v1.0.0-vgame-0.8.0-client.jar`
-  and `ModLoader-v1.0.0-vgame-0.8.0-server.jar` in each repo's `dist/`.
+- Brand "Voxelite" → "OpenVoxel ModLoader"; jars `ModLoader-v1.0.0-vgame-0.0.8-client.jar`
+  and `ModLoader-v1.0.0-vgame-0.0.8-server.jar` in each repo's `dist/`.
 - Scripts for Windows and Linux: `launch.bat/.ps1/.sh` (client; tells the user to pick
   0.0.8-Debug in EN/ES), `start.bat/.ps1/.sh` (server, interactive console), `build.bat/.sh`
   + Gradle wrapper 9.1 with `OPENVOXEL_GAME_JAR` / `OPENVOXEL_SERVER_JAR`.
