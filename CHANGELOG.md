@@ -1,5 +1,19 @@
 # Change log
 
+## 2026-10-18 — OpenVoxel ModLoader 1.1.0-pre3 (client + server, pre-release)
+
+- Native blocks: `ctx.nativeBlock(id)...register()` adds real `BlockType` constants (BlockType `<clinit>` extended
+  in memory, ASM-generated subclass), deterministic type ids 1024..4095 shared by client and server; the agent
+  also runs on dedicated servers (`agent/`, `=server`). Registration in `onLoad` is deferred safely.
+- `/give [player] <item> [count]` like Minecraft (inventory, stacking, drops overflow, never replaces the held item),
+  server-routed with `openvoxel.command.give(.others)`.
+- Tab list header/footer: YAML lists or `
+` text (several lines).
+- Full Javadoc published on the website; template mod no longer spams chat (`/where`).
+- Server list MOTD (`gameplay.motd`, agent patches the status reply) and real max players; join message is `gameplay.welcome-message`.
+- Tab completion per argument position.
+- Client and server code split into packages; `Permissions` moved to `server.permissions` (breaking for plugins).
+
 ## 2026-10-18 — OpenVoxel ModLoader 1.1.0-pre2 (client + server, pre-release)
 
 - Client: ModLoader block code stored in the block state (bits 32..55 hash of namespace:path, facing 56..57)
