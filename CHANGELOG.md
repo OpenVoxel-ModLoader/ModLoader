@@ -1,5 +1,22 @@
 # Change log
 
+## 2026-10-18 — OpenVoxel ModLoader 1.1.0-pre1 (client, pre-release)
+
+- Torches: wall torches (tilted model variant via `BlockType.getModel(state)` hook, facing +
+  "upside" bit in the state), support rules (pop off when the block below/behind breaks),
+  never replaced by placed blocks (`BlockPlacement.canReplaceInto` hook).
+- Client-side mobs (`Mobs`): pig and zombie box models, wander/chase AI, melee combat with
+  swords/knockback, drops (porkchop, rotten flesh), `/mobs` command.
+- Recipe book (`RecipeBook`) in the survival inventory (2x2) and crafting table (3x3).
+- Creative inventory rewritten: icon tabs (blocks, tools, combat, food, materials,
+  inventory), counts shown, Minecraft right-click semantics; `/clear`.
+- Chat: suggestion popup with argument completers, Up/Down selection; Tab player list (`Net`).
+- Control channel for ModLoader servers (`ML:` chat lines: hello, cmds, gm, tab);
+  `/mlhello` on join; game mode requests go to the server when it answers.
+- Fix: camera aspect synced to the framebuffer every frame — menus on maximized/fullscreen
+  windows were drawn stretched and clicks missed the buttons.
+- First-person arm pose, chest tile textures, `ModContext.setHotbarSlot`.
+
 ## 2026-10-12 — OpenVoxel ModLoader 1.0.0 (repo split)
 
 - Project split into `repos/` for the GitHub org OpenVoxel-ModLoader: `modloader-client`
