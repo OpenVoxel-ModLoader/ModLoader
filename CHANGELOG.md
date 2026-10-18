@@ -1,5 +1,14 @@
 # Change log
 
+## 2026-10-18 — OpenVoxel ModLoader 1.1.0-pre2 (client + server, pre-release)
+
+- Client: ModLoader block code stored in the block state (bits 32..55 hash of namespace:path, facing 56..57)
+  so blocks mesh with world lighting, persist in saves and sync to other ModLoader players; BlockRegistry +
+  `ModContext.registerBlock`; death screen; Minecraft pick block; explained connection errors; game-styled main menu.
+- Server: `Permissions` API (provider interface), ops.yml / permissions.yml, every command gated by a node,
+  `/op /deop /gamemode /whitelist /msg /spawn /setspawn /warp /setwarp /delwarp /warps /perms`, tablist.yml,
+  `gameplay` section in server.properties.yml; start scripts remove older core jars from plugins/.
+
 ## 2026-10-18 — OpenVoxel ModLoader 1.1.0-pre1 (client, pre-release)
 
 - Torches: wall torches (tilted model variant via `BlockType.getModel(state)` hook, facing +
